@@ -2,3 +2,5 @@
 ###########
 *.yml
 *.ymal
+*.csv
+*xx.json
