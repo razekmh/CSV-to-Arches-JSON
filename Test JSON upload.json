@@ -1,0 +1,159 @@
+{
+    "graph": [
+        {
+            "author": " ",
+            "cards": [
+                {
+                    "active": true,
+                    "cardid": "99c543e0-fb6d-11eb-86da-fa163ee7ffac",
+                    "component_id": "f05e4d3a-53c1-11e8-b0ea-784f435179ea",
+                    "config": null,
+                    "constraints": [
+                        {
+                            "card_id": "99c543e0-fb6d-11eb-86da-fa163ee7ffac",
+                            "constraintid": "91a67c99-ad76-463e-98b3-7a7855cb6cab",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        },
+                        {
+                            "card_id": "99c543e0-fb6d-11eb-86da-fa163ee7ffac",
+                            "constraintid": "446641bf-f2ad-452e-aab2-4e9a110076de",
+                            "nodes": [],
+                            "uniquetoallinstances": false
+                        }
+                    ],
+                    "cssclass": null,
+                    "description": null,
+                    "graph_id": "7c5db359-fb6d-11eb-86da-fa163ee7ffac",
+                    "helpenabled": false,
+                    "helptext": null,
+                    "helptitle": null,
+                    "instructions": null,
+                    "is_editable": true,
+                    "name": "Name",
+                    "nodegroup_id": "99c543de-fb6d-11eb-86da-fa163ee7ffac",
+                    "sortorder": null,
+                    "visible": true
+                }
+            ],
+            "cards_x_nodes_x_widgets": [
+                {
+                    "card_id": "99c543e0-fb6d-11eb-86da-fa163ee7ffac",
+                    "config": {
+                        "defaultValue": "",
+                        "label": "Name",
+                        "maxLength": null,
+                        "placeholder": "Enter text",
+                        "width": "100%"
+                    },
+                    "id": "a75992d6-fb6d-11eb-86da-fa163ee7ffac",
+                    "label": "Name",
+                    "node_id": "99c543de-fb6d-11eb-86da-fa163ee7ffac",
+                    "sortorder": 0,
+                    "visible": true,
+                    "widget_id": "10000000-0000-0000-0000-000000000001"
+                }
+            ],
+            "color": null,
+            "config": {},
+            "deploymentdate": null,
+            "deploymentfile": null,
+            "description": "",
+            "edges": [
+                {
+                    "description": null,
+                    "domainnode_id": "7c5db358-fb6d-11eb-86da-fa163ee7ffac",
+                    "edgeid": "99c543e1-fb6d-11eb-86da-fa163ee7ffac",
+                    "graph_id": "7c5db359-fb6d-11eb-86da-fa163ee7ffac",
+                    "name": null,
+                    "ontologyproperty": "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by",
+                    "rangenode_id": "99c543de-fb6d-11eb-86da-fa163ee7ffac"
+                }
+            ],
+            "functions_x_graphs": [],
+            "graphid": "7c5db359-fb6d-11eb-86da-fa163ee7ffac",
+            "iconclass": "fa fa-child",
+            "is_editable": true,
+            "isactive": true,
+            "isresource": true,
+            "jsonldcontext": null,
+            "name": "Test JSON upload",
+            "nodegroups": [
+                {
+                    "cardinality": "1",
+                    "legacygroupid": null,
+                    "nodegroupid": "99c543de-fb6d-11eb-86da-fa163ee7ffac",
+                    "parentnodegroup_id": null
+                }
+            ],
+            "nodes": [
+                {
+                    "config": null,
+                    "datatype": "string",
+                    "description": null,
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "7c5db359-fb6d-11eb-86da-fa163ee7ffac",
+                    "is_collector": true,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": false,
+                    "name": "Name",
+                    "nodegroup_id": "99c543de-fb6d-11eb-86da-fa163ee7ffac",
+                    "nodeid": "99c543de-fb6d-11eb-86da-fa163ee7ffac",
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E41_Appellation",
+                    "parentproperty": "http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by",
+                    "sortorder": 0
+                },
+                {
+                    "config": null,
+                    "datatype": "semantic",
+                    "description": "",
+                    "exportable": false,
+                    "fieldname": null,
+                    "graph_id": "7c5db359-fb6d-11eb-86da-fa163ee7ffac",
+                    "is_collector": false,
+                    "isrequired": false,
+                    "issearchable": true,
+                    "istopnode": true,
+                    "name": "Test JSON upload",
+                    "nodegroup_id": null,
+                    "nodeid": "7c5db358-fb6d-11eb-86da-fa163ee7ffac",
+                    "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E27_Site",
+                    "parentproperty": "",
+                    "sortorder": 0
+                }
+            ],
+            "ontology_id": "e6e8db47-2ccf-11e6-927e-b8f6b115d7dd",
+            "relatable_resource_model_ids": [],
+            "resource_2_resource_constraints": [],
+            "root": {
+                "config": null,
+                "datatype": "semantic",
+                "description": "",
+                "exportable": false,
+                "fieldname": null,
+                "graph_id": "7c5db359-fb6d-11eb-86da-fa163ee7ffac",
+                "is_collector": false,
+                "isrequired": false,
+                "issearchable": true,
+                "istopnode": true,
+                "name": "Test JSON upload",
+                "nodegroup_id": null,
+                "nodeid": "7c5db358-fb6d-11eb-86da-fa163ee7ffac",
+                "ontologyclass": "http://www.cidoc-crm.org/cidoc-crm/E27_Site",
+                "sortorder": 0
+            },
+            "slug": null,
+            "subtitle": "",
+            "template_id": "50000000-0000-0000-0000-000000000001",
+            "version": ""
+        }
+    ],
+    "metadata": {
+        "db": "PostgreSQL 12.7 (Ubuntu 12.7-1.pgdg18.04+1) on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.0, 64-bit",
+        "git hash": "fatal: not a git repository (or any of the parent directories): .git",
+        "os": "Linux",
+        "os version": "4.15.0-142-generic"
+    }
+}
