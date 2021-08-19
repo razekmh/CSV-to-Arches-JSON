@@ -4,16 +4,13 @@ import uuid
 # import yaml
 
 # TODO
-# read the resource model structure JSON
-# extract the nodes attributes
-# group nodes to based on nodegroup_id
+# multiple instances per resource:
+#   group the rows according to the resourceID
+#   create multiple tiles per attribute
+# cascading stracture:
+#   check for parent tiles and create them >> unchecked
+#
 
-# Read the data csv
-# for each new resource create JSON resource
-# create tile for each group
-# check for parent tiles and create them
-
-# Create the data JSON object
 
 # parameters
 res_model_json = "Activity Resource Model.json"
