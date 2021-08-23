@@ -7,9 +7,18 @@ import uuid
 # multiple instances per resource:
 #   group the rows according to the resourceID
 #   create multiple tiles per attribute
+#
 # cascading stracture:
 #   check for parent tiles and create them >> unchecked
-#
+# 
+# concepts:
+#   check attribute type
+#   find coorrespending concept
+# 
+# checks:
+#   Does it support all datatypes? (GeoJSON??)
+#   Does it take paramenters? 
+#   Clean up the code
 
 
 # parameters
@@ -27,10 +36,12 @@ with open(res_model_json, 'r') as file_rm:
 nodegroup_list = rm_json['graph'][0]['nodegroups']
 # print(nodegroup_list)
 # get graphid from the first card
+print(nodegroup_list)
 graphid = rm_json['graph'][0]['cards'][0]['graph_id']
 
 # get node attributes
 node_list = []
+print(rm_json['graph'][0]['nodes'])
 for node in rm_json['graph'][0]['nodes']:
     node_list.append({
         'nodeid' : node['nodeid'],
@@ -64,25 +75,28 @@ def create_res(graphid, grouped_nodes, row, legacy_id=''):
     return res
 
 
-def create_tile(card, resid, row, parent=None, tiles=None):
+def create_tile(card, resid, row, parent=None, tiles=None, tileid=str(uuid.uuid4())):
     # create tile
     # print(card)
     if not parent: 
         tiles = []
     tile = {}   
-    tile['tileid'] = str(uuid.uuid4())
+    tile['tileid'] = tileid
     tile['resourceinstance_id'] = resid
     tile['nodegroup_id'] = card[0]
     tile['sortorder'] = 0
     tile['parenttile_id'] = None
     tile['data'] = Build_data(card, row)
-    tiles.append(tile)
+    
     for nodegroup in nodegroup_list:
         if tile['nodegroup_id'] == nodegroup['nodegroupid'] and nodegroup['parentnodegroup_id'] is not None:
                 print(nodegroup['parentnodegroup_id'])
-                create_tile(card=(nodegroup['parentnodegroup_id'],None), resid=resid, row=row, tiles=tiles)
-            #  and
-
+                parenttile_id = str(uuid.uuid4())
+                tile['parenttile_id'] = parenttile_id
+                tiles.append(tile)
+                create_tile(card=(nodegroup['parentnodegroup_id'],None), resid=resid, row=row, tiles=tiles, tileid=parenttile_id)
+    if tile not in tiles:
+        tiles.append(tile)
     # print(card)
     # here check for parent and then recurseive call to the same function with the parent ID to create a parent tile
     # create_tile(None, resid,  
