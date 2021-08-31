@@ -7,7 +7,7 @@ from itertools import filterfalse
 res_model_json = "Test JSON upload.json"
 data_csv = "test_json_upload_data.csv"
 
-res_model_json = "Activity Resource Model.json"
+# res_model_json = "Activity Resource Model.json"
 
 
 # read json from resource model structure
@@ -31,7 +31,6 @@ for node in rm_json['graph'][0]['nodes']:
         'istopnode' : node['istopnode'],
     })
 
-base_structure = {}
 for node in node_list:
     # print(node)
     for group in nodegroup_list:
@@ -55,7 +54,9 @@ for main_node in node_list:
     # print(base_structure)
     # break
     group_structure = []
+
 for nodegroup in nodegroup_list:
+    # add first level groups
     if nodegroup['parentnodegroup_id']:
         pass
     else:
@@ -67,7 +68,9 @@ for nodegroup in nodegroup_list:
             })
         nodegroup_inventory.remove(nodegroup)
 
-print(group_structure)
+nodegroup = None
+# print(nodegroup_inventory)
+# print(group_structure)
 
 def check_group(group_structure,checkgroup):
     insertion_detected = False
@@ -85,11 +88,14 @@ def check_group(group_structure,checkgroup):
 
         if not insertion_detected: 
             nodegroup['childrengroups'], insertion_detected = check_group(nodegroup['childrengroups'],checkgroup)
-            print(nodegroup,"\n\n")
+            # print(nodegroup,"\n\n")
     return (group_structure, insertion_detected)
 
 while len(nodegroup_inventory) > 0:
+    print(len(nodegroup_inventory))
     for nodegroup in nodegroup_inventory:
+        print(nodegroup)
+        print(group_structure)
         group_structure, insertion_detected = check_group(group_structure, nodegroup)
         if insertion_detected: 
             nodegroup_inventory.remove(nodegroup)
@@ -97,9 +103,9 @@ while len(nodegroup_inventory) > 0:
     
 
 
-print(len(group_structure))
-print(group_structure)
-print(len(node_inventory))
+# print(len(group_structure))
+# print(group_structure)
+# print(len(node_inventory))
         
 
     
