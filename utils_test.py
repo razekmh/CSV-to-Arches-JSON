@@ -51,10 +51,12 @@ def get_nodes(node):
         d['cardinality'] = group_info['cardinality']
         d['legacygroupid'] = group_info['legacygroupid']
         d['parentnodegroup_id'] = group_info['parentnodegroup_id']
+        d['childrennodes'] = [node for node in node_list if node['nodegroupid'] == d['nodegroupid']]
     children = get_children(node)
     
     if children:
-        d['children'] = [get_nodes(child) for child in children]
+        d['childrengroups'] = [get_nodes(child) for child in children]
+
     return d
 
 def get_children(node):
