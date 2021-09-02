@@ -13,7 +13,7 @@ from itertools import filterfalse
 
 '''Define the source files'''
 res_model_json = "Test JSON upload.json"
-data_csv = "test_json_upload_data.csv"
+# data_csv = "test_json_upload_data.csv"
 res_model_json = "Activity Resource Model.json"
 
 '''read json from resource model structure'''
@@ -32,6 +32,8 @@ for node in rm_json['graph'][0]['nodes']:
         'nodegroupid' : node['nodegroup_id'],
         'name' : node['name'],
         'istopnode' : node['istopnode'],
+        'datatype' : node['datatype'],
+        'config' : node['config'],
     })
 
 '''create cascading group strcture'''
@@ -63,4 +65,6 @@ def get_children(node):
     return [x[1] for x in nodegroup_links if x[0] == node]
 
 tree = get_nodes('Root')
-print(json.dumps(tree, indent=4))
+# print(json.dumps(tree, indent=4))
+with open(f'{res_model_json[:-4]}_tree.json', 'w') as tr:
+        json.dump(tree, tr)

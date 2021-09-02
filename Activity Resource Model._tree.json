@@ -1,0 +1,384 @@
+{
+    "nodegroupid": "Root",
+    "childrengroups": [{
+        "nodegroupid": "ab7463df-e741-11e6-84a6-026d961c88e6",
+        "cardinality": "n",
+        "legacygroupid": null,
+        "parentnodegroup_id": null,
+        "childrennodes": [{
+            "nodeid": "ab7463e3-e741-11e6-84a6-026d961c88e6",
+            "nodegroupid": "ab7463df-e741-11e6-84a6-026d961c88e6",
+            "name": "Description Type",
+            "istopnode": false,
+            "datatype": "concept",
+            "config": {
+                "rdmCollection": null
+            }
+        }, {
+            "nodeid": "ab7463df-e741-11e6-84a6-026d961c88e6",
+            "nodegroupid": "ab7463df-e741-11e6-84a6-026d961c88e6",
+            "name": "Description Assignment",
+            "istopnode": false,
+            "datatype": "semantic",
+            "config": null
+        }, {
+            "nodeid": "ab7463e2-e741-11e6-84a6-026d961c88e6",
+            "nodegroupid": "ab7463df-e741-11e6-84a6-026d961c88e6",
+            "name": "Description / \u0648\u0635\u0641",
+            "istopnode": false,
+            "datatype": "string",
+            "config": null
+        }]
+    }, {
+        "nodegroupid": "2b6dd397-e741-11e6-84a6-026d961c88e6",
+        "cardinality": "n",
+        "legacygroupid": null,
+        "parentnodegroup_id": null,
+        "childrennodes": [{
+            "nodeid": "2b6dd397-e741-11e6-84a6-026d961c88e6",
+            "nodegroupid": "2b6dd397-e741-11e6-84a6-026d961c88e6",
+            "name": "Keyword",
+            "istopnode": false,
+            "datatype": "concept-list",
+            "config": {
+                "rdmCollection": "4063c7c5-485b-432b-9dfb-4f81cb6b5cfd"
+            }
+        }]
+    }, {
+        "nodegroupid": "b9e90911-e741-11e6-84a6-026d961c88e6",
+        "cardinality": "n",
+        "legacygroupid": null,
+        "parentnodegroup_id": null,
+        "childrennodes": [{
+            "nodeid": "b9e90914-e741-11e6-84a6-026d961c88e6",
+            "nodegroupid": "b9e90911-e741-11e6-84a6-026d961c88e6",
+            "name": "Name Type",
+            "istopnode": false,
+            "datatype": "concept",
+            "config": {
+                "rdmCollection": "051b5950-2c1e-49ff-af0d-dfbaa971d2fa"
+            }
+        }, {
+            "nodeid": "b9e90911-e741-11e6-84a6-026d961c88e6",
+            "nodegroupid": "b9e90911-e741-11e6-84a6-026d961c88e6",
+            "name": "Name",
+            "istopnode": false,
+            "datatype": "string",
+            "config": null
+        }]
+    }, {
+        "nodegroupid": "85c6a1be-e741-11e6-84a6-026d961c88e6",
+        "cardinality": "n",
+        "legacygroupid": null,
+        "parentnodegroup_id": null,
+        "childrennodes": [{
+            "nodeid": "85c6a1be-e741-11e6-84a6-026d961c88e6",
+            "nodegroupid": "85c6a1be-e741-11e6-84a6-026d961c88e6",
+            "name": "Activity Phase",
+            "istopnode": false,
+            "datatype": "semantic",
+            "config": null
+        }],
+        "childrengroups": [{
+            "nodegroupid": "85c6a1bb-e741-11e6-84a6-026d961c88e6",
+            "cardinality": "1",
+            "legacygroupid": null,
+            "parentnodegroup_id": "85c6a1be-e741-11e6-84a6-026d961c88e6",
+            "childrennodes": [{
+                "nodeid": "85c6a1c2-e741-11e6-84a6-026d961c88e6",
+                "nodegroupid": "85c6a1bb-e741-11e6-84a6-026d961c88e6",
+                "name": "Time Span Phase",
+                "istopnode": false,
+                "datatype": "semantic",
+                "config": null
+            }, {
+                "nodeid": "85c6a1bb-e741-11e6-84a6-026d961c88e6",
+                "nodegroupid": "85c6a1bb-e741-11e6-84a6-026d961c88e6",
+                "name": "Phase Type Assignment",
+                "istopnode": false,
+                "datatype": "semantic",
+                "config": null
+            }, {
+                "nodeid": "85c6a1c4-e741-11e6-84a6-026d961c88e6",
+                "nodegroupid": "85c6a1bb-e741-11e6-84a6-026d961c88e6",
+                "name": "Activity Type",
+                "istopnode": false,
+                "datatype": "concept",
+                "config": {
+                    "rdmCollection": "eaf99308-095e-424d-ac8b-51d1da78deb4"
+                }
+            }, {
+                "nodeid": "85c6a1c1-e741-11e6-84a6-026d961c88e6",
+                "nodegroupid": "85c6a1bb-e741-11e6-84a6-026d961c88e6",
+                "name": "To Date",
+                "istopnode": false,
+                "datatype": "date",
+                "config": {
+                    "dateFormat": "YYYY-MM-DD"
+                }
+            }, {
+                "nodeid": "85c6a1c3-e741-11e6-84a6-026d961c88e6",
+                "nodegroupid": "85c6a1bb-e741-11e6-84a6-026d961c88e6",
+                "name": "From Date",
+                "istopnode": false,
+                "datatype": "date",
+                "config": {
+                    "dateFormat": "YYYY-MM-DD"
+                }
+            }]
+        }]
+    }, {
+        "nodegroupid": "61f1a1b9-e741-11e6-84a6-026d961c88e6",
+        "cardinality": "n",
+        "legacygroupid": null,
+        "parentnodegroup_id": null,
+        "childrennodes": [{
+            "nodeid": "61f1a1bc-e741-11e6-84a6-026d961c88e6",
+            "nodegroupid": "61f1a1b9-e741-11e6-84a6-026d961c88e6",
+            "name": "External Identifier Type",
+            "istopnode": false,
+            "datatype": "concept",
+            "config": {
+                "rdmCollection": "a4bfeafb-7a04-43fd-b812-331105ce78b3"
+            }
+        }, {
+            "nodeid": "61f1a1b9-e741-11e6-84a6-026d961c88e6",
+            "nodegroupid": "61f1a1b9-e741-11e6-84a6-026d961c88e6",
+            "name": "External XRef",
+            "istopnode": false,
+            "datatype": "string",
+            "config": null
+        }, {
+            "nodeid": "61f1a1bd-e741-11e6-84a6-026d961c88e6",
+            "nodegroupid": "61f1a1b9-e741-11e6-84a6-026d961c88e6",
+            "name": "External Source",
+            "istopnode": false,
+            "datatype": "domain-value",
+            "config": {
+                "options": []
+            }
+        }]
+    }, {
+        "nodegroupid": "f74db658-e741-11e6-84a6-026d961c88e6",
+        "cardinality": "1",
+        "legacygroupid": null,
+        "parentnodegroup_id": null,
+        "childrennodes": [{
+            "nodeid": "f74db658-e741-11e6-84a6-026d961c88e6",
+            "nodegroupid": "f74db658-e741-11e6-84a6-026d961c88e6",
+            "name": "Place",
+            "istopnode": false,
+            "datatype": "semantic",
+            "config": null
+        }],
+        "childrengroups": [{
+            "nodegroupid": "f74db649-e741-11e6-84a6-026d961c88e6",
+            "cardinality": "n",
+            "legacygroupid": null,
+            "parentnodegroup_id": "f74db658-e741-11e6-84a6-026d961c88e6",
+            "childrennodes": [{
+                "nodeid": "f74db649-e741-11e6-84a6-026d961c88e6",
+                "nodegroupid": "f74db649-e741-11e6-84a6-026d961c88e6",
+                "name": "Place Address",
+                "istopnode": false,
+                "datatype": "string",
+                "config": null
+            }, {
+                "nodeid": "f74db65b-e741-11e6-84a6-026d961c88e6",
+                "nodegroupid": "f74db649-e741-11e6-84a6-026d961c88e6",
+                "name": "Address Type",
+                "istopnode": false,
+                "datatype": "concept",
+                "config": {
+                    "rdmCollection": null
+                }
+            }]
+        }, {
+            "nodegroupid": "f74db652-e741-11e6-84a6-026d961c88e6",
+            "cardinality": "n",
+            "legacygroupid": null,
+            "parentnodegroup_id": "f74db658-e741-11e6-84a6-026d961c88e6",
+            "childrennodes": [{
+                "nodeid": "f74db652-e741-11e6-84a6-026d961c88e6",
+                "nodegroupid": "f74db652-e741-11e6-84a6-026d961c88e6",
+                "name": "Cadastral Reference",
+                "istopnode": false,
+                "datatype": "string",
+                "config": null
+            }]
+        }, {
+            "nodegroupid": "f74db655-e741-11e6-84a6-026d961c88e6",
+            "cardinality": "n",
+            "legacygroupid": null,
+            "parentnodegroup_id": "f74db658-e741-11e6-84a6-026d961c88e6",
+            "childrennodes": [{
+                "nodeid": "f74db655-e741-11e6-84a6-026d961c88e6",
+                "nodegroupid": "f74db655-e741-11e6-84a6-026d961c88e6",
+                "name": "Administration Subdivision",
+                "istopnode": false,
+                "datatype": "semantic",
+                "config": null
+            }, {
+                "nodeid": "f74db65c-e741-11e6-84a6-026d961c88e6",
+                "nodegroupid": "f74db655-e741-11e6-84a6-026d961c88e6",
+                "name": "Administrative Subdivision Name",
+                "istopnode": false,
+                "datatype": "string",
+                "config": null
+            }, {
+                "nodeid": "f74db65d-e741-11e6-84a6-026d961c88e6",
+                "nodegroupid": "f74db655-e741-11e6-84a6-026d961c88e6",
+                "name": "Administrative Subdivision Type",
+                "istopnode": false,
+                "datatype": "concept",
+                "config": {
+                    "rdmCollection": "d5230d60-0eb9-483d-90f4-9965eaca0292"
+                }
+            }]
+        }, {
+            "nodegroupid": "f74db64f-e741-11e6-84a6-026d961c88e6",
+            "cardinality": "1",
+            "legacygroupid": null,
+            "parentnodegroup_id": "f74db658-e741-11e6-84a6-026d961c88e6",
+            "childrennodes": [{
+                "nodeid": "f74db64f-e741-11e6-84a6-026d961c88e6",
+                "nodegroupid": "f74db64f-e741-11e6-84a6-026d961c88e6",
+                "name": "Spatial Coordinates Geometry",
+                "istopnode": false,
+                "datatype": "geojson-feature-collection",
+                "config": {
+                    "addToMap": false,
+                    "advancedStyle": "",
+                    "advancedStyling": false,
+                    "autoManageCache": false,
+                    "cacheTiles": false,
+                    "clusterDistance": 20,
+                    "clusterMaxZoom": 5,
+                    "clusterMinPoints": 3,
+                    "fillColor": "rgba(130, 130, 130, 0.5)",
+                    "haloRadius": 4,
+                    "haloWeight": 4,
+                    "layerActivated": true,
+                    "layerIcon": "",
+                    "layerLegend": "",
+                    "layerName": "",
+                    "lineColor": "rgba(130, 130, 130, 0.7)",
+                    "lineHaloColor": "rgba(200, 200, 200, 0.5)",
+                    "outlineColor": "rgba(200, 200, 200, 0.7)",
+                    "outlineWeight": 2,
+                    "pointColor": "rgba(130, 130, 130, 0.7)",
+                    "pointHaloColor": "rgba(200, 200, 200, 0.5)",
+                    "radius": 2,
+                    "simplification": 0.3,
+                    "weight": 2
+                }
+            }, {
+                "nodeid": "f74db65f-e741-11e6-84a6-026d961c88e6",
+                "nodegroupid": "f74db64f-e741-11e6-84a6-026d961c88e6",
+                "name": "Geometry Qualifier",
+                "istopnode": false,
+                "datatype": "concept",
+                "config": {
+                    "rdmCollection": null
+                }
+            }]
+        }, {
+            "nodegroupid": "f74db64c-e741-11e6-84a6-026d961c88e6",
+            "cardinality": "1",
+            "legacygroupid": null,
+            "parentnodegroup_id": "f74db658-e741-11e6-84a6-026d961c88e6",
+            "childrennodes": [{
+                "nodeid": "f74db64c-e741-11e6-84a6-026d961c88e6",
+                "nodegroupid": "f74db64c-e741-11e6-84a6-026d961c88e6",
+                "name": "Place Description Assignment",
+                "istopnode": false,
+                "datatype": "semantic",
+                "config": null
+            }, {
+                "nodeid": "f74db65e-e741-11e6-84a6-026d961c88e6",
+                "nodegroupid": "f74db64c-e741-11e6-84a6-026d961c88e6",
+                "name": "Place Description",
+                "istopnode": false,
+                "datatype": "string",
+                "config": null
+            }]
+        }]
+    }, {
+        "nodegroupid": "0cbaba63-e742-11e6-84a6-026d961c88e6",
+        "cardinality": "1",
+        "legacygroupid": null,
+        "parentnodegroup_id": null,
+        "childrennodes": [{
+            "nodeid": "0cbaba67-e742-11e6-84a6-026d961c88e6",
+            "nodegroupid": "0cbaba63-e742-11e6-84a6-026d961c88e6",
+            "name": "Beginning of Existence Time Span",
+            "istopnode": false,
+            "datatype": "semantic",
+            "config": null
+        }, {
+            "nodeid": "0cbaba69-e742-11e6-84a6-026d961c88e6",
+            "nodegroupid": "0cbaba63-e742-11e6-84a6-026d961c88e6",
+            "name": "Start Date of Existence",
+            "istopnode": false,
+            "datatype": "date",
+            "config": {
+                "dateFormat": "YYYY-MM-DD"
+            }
+        }, {
+            "nodeid": "0cbaba6b-e742-11e6-84a6-026d961c88e6",
+            "nodegroupid": "0cbaba63-e742-11e6-84a6-026d961c88e6",
+            "name": "End of Existence",
+            "istopnode": false,
+            "datatype": "semantic",
+            "config": null
+        }, {
+            "nodeid": "0cbaba6a-e742-11e6-84a6-026d961c88e6",
+            "nodegroupid": "0cbaba63-e742-11e6-84a6-026d961c88e6",
+            "name": "Start Date Type",
+            "istopnode": false,
+            "datatype": "concept",
+            "config": {
+                "rdmCollection": "216ee2fb-4197-4f84-84dd-3a38d59480fb"
+            }
+        }, {
+            "nodeid": "0cbaba6c-e742-11e6-84a6-026d961c88e6",
+            "nodegroupid": "0cbaba63-e742-11e6-84a6-026d961c88e6",
+            "name": "Beginning of Existence",
+            "istopnode": false,
+            "datatype": "semantic",
+            "config": null
+        }, {
+            "nodeid": "0cbaba6d-e742-11e6-84a6-026d961c88e6",
+            "nodegroupid": "0cbaba63-e742-11e6-84a6-026d961c88e6",
+            "name": "End Date Type",
+            "istopnode": false,
+            "datatype": "concept",
+            "config": {
+                "rdmCollection": "873866bb-d7c6-46a7-94fd-8a085d8eff57"
+            }
+        }, {
+            "nodeid": "0cbaba68-e742-11e6-84a6-026d961c88e6",
+            "nodegroupid": "0cbaba63-e742-11e6-84a6-026d961c88e6",
+            "name": "End of Existence Time Span",
+            "istopnode": false,
+            "datatype": "semantic",
+            "config": null
+        }, {
+            "nodeid": "0cbaba63-e742-11e6-84a6-026d961c88e6",
+            "nodegroupid": "0cbaba63-e742-11e6-84a6-026d961c88e6",
+            "name": "Existence Event",
+            "istopnode": false,
+            "datatype": "semantic",
+            "config": null
+        }, {
+            "nodeid": "0cbaba66-e742-11e6-84a6-026d961c88e6",
+            "nodegroupid": "0cbaba63-e742-11e6-84a6-026d961c88e6",
+            "name": "End Date of Existence",
+            "istopnode": false,
+            "datatype": "date",
+            "config": {
+                "dateFormat": "YYYY-MM-DD"
+            }
+        }]
+    }]
+}
