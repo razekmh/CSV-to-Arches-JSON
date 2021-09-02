@@ -3,25 +3,28 @@ import uuid
 from collections import defaultdict
 from itertools import filterfalse
 
+'''TODO
+- Build the group structure
+    - find top node
+    - find first level nodes
+    - recurse over the rest of the groups to find the next levels ..
+- Add node info'''
 
+
+'''Define the source files'''
 res_model_json = "Test JSON upload.json"
 data_csv = "test_json_upload_data.csv"
+res_model_json = "Activity Resource Model.json"
 
-# res_model_json = "Activity Resource Model.json"
-
-
-# read json from resource model structure
+'''read json from resource model structure'''
 with open(res_model_json, 'r') as file_rm:
     rm_json = json.load(file_rm)
 
-
-# copy nodegroup object
+'''get nodegroups'''
 nodegroup_list = rm_json['graph'][0]['nodegroups']
 
-
-# get node attributes
+'''get nodes'''
 node_list = []
-
 # print(rm_json['graph'][0]['nodes'])
 for node in rm_json['graph'][0]['nodes']:
     node_list.append({
@@ -31,100 +34,25 @@ for node in rm_json['graph'][0]['nodes']:
         'istopnode' : node['istopnode'],
     })
 
-for node in node_list:
-    # print(node)
-    for group in nodegroup_list:
-        if node['nodegroupid'] == group['nodegroupid']:
-            pass
-            # print(f"nodeid = {node['nodeid']}, groupid = {node['nodegroup_id']}, parentgroup = {group['parentnodegroup_id']}")
-
-node_inventory = node_list.copy()
-nodegroup_inventory = nodegroup_list.copy()
-node_inventory.remove([node for node in node_inventory if node['istopnode']][0])
-# print(nodegroup_inventory)
-
-# topnode has no nodegroupid  
-# 
-
-base_structure = defaultdict(list)
-for main_node in node_list:
-    if main_node['istopnode']:
-        base_structure["nodegroupid"] = main_node['nodeid']
-        break
-    # print(base_structure)
-    # break
-    group_structure = []
-
-for nodegroup in nodegroup_list:
-    # add first level groups
-    if nodegroup['parentnodegroup_id']:
-        pass
+'''create cascading group strcture'''
+nodegroup_links =[]
+for group in nodegroup_list:
+    if group['parentnodegroup_id']:
+        nodegroup_links.append((group['parentnodegroup_id'],group['nodegroupid']))
     else:
-        group_structure.append({
-            'nodegroupid' : nodegroup['nodegroupid'],
-            'parentgroup' : None,
-            "childrengroups" : [],
-            "childrennodes" : [],
-            })
-        nodegroup_inventory.remove(nodegroup)
+        nodegroup_links.append(("Root",group['nodegroupid']))
 
-nodegroup = None
-# print(nodegroup_inventory)
-# print(group_structure)
-
-def check_group(group_structure,checkgroup):
-    insertion_detected = False
-    # place a group in its location within the structure
-    for nodegroup in group_structure:
-        if checkgroup['parentnodegroup_id'] == nodegroup['nodegroupid']:
-            nodegroup['childrengroups'].append({
-            'nodegroupid' : checkgroup['nodegroupid'],
-            'parentgroup' : None,
-            "childrengroups" : [],
-            "childrennodes" : [],
-            })
-            insertion_detected = True
-            break
-
-        if not insertion_detected: 
-            nodegroup['childrengroups'], insertion_detected = check_group(nodegroup['childrengroups'],checkgroup)
-            # print(nodegroup,"\n\n")
-    return (group_structure, insertion_detected)
-
-while len(nodegroup_inventory) > 0:
-    print(len(nodegroup_inventory))
-    for nodegroup in nodegroup_inventory:
-        print(nodegroup)
-        print(group_structure)
-        group_structure, insertion_detected = check_group(group_structure, nodegroup)
-        if insertion_detected: 
-            nodegroup_inventory.remove(nodegroup)
-
+def get_nodes(node):
+    d = {}
+    d['name'] = node
     
+    children = get_children(node)
+    if children:
+        d['children'] = [get_nodes(child) for child in children]
+    return d
 
+def get_children(node):
+    return [x[1] for x in nodegroup_links if x[0] == node]
 
-# print(len(group_structure))
-# print(group_structure)
-# print(len(node_inventory))
-        
-
-    
-
-        # check if the parnet exists 
-
-
-# while len(node_inventory) > 0:
-#     for node in node_list:
-#         base_structure = defaultdict(list)
-#         # print(node['istopnode'])
-#         if node['istopnode']:
-#             base_structure["nodegroup_id"] = node['nodegroup_id']
-#             for check_node in node_list: 
-#                 # base_structure["children_groups"].extend([group['nodegroupid'] for group in nodegroup_list if group['parentnodegroup_id'] == check_node['nodegroup_id']])
-#                 print([group['nodegroupid'] for group in nodegroup_list if group['parentnodegroup_id'] == check_node['nodegroup_id']])
-#             # base_structure["children_nodes"]
-#             # print(node)
-#             if node in node_inventory:
-#                 node_inventory.remove(node)
-
-    # print(base_structure)    
+tree = get_nodes('Root')
+print(json.dumps(tree, indent=4))
