@@ -44,9 +44,15 @@ for group in nodegroup_list:
 
 def get_nodes(node):
     d = {}
-    d['name'] = node
-    
+    d['nodegroupid'] = node
+    group_info = [group for group in nodegroup_list if group['nodegroupid'] == node]
+    if len(group_info) > 0:
+        group_info = group_info[0]
+        d['cardinality'] = group_info['cardinality']
+        d['legacygroupid'] = group_info['legacygroupid']
+        d['parentnodegroup_id'] = group_info['parentnodegroup_id']
     children = get_children(node)
+    
     if children:
         d['children'] = [get_nodes(child) for child in children]
     return d
