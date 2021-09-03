@@ -64,6 +64,7 @@ def get_nodes(node):
 def get_children(node):
     return [x[1] for x in nodegroup_links if x[0] == node]
 
+'''export the structure to a json file'''
 tree = get_nodes('Root')
 # print(json.dumps(tree, indent=4))
 with open(f'{res_model_json[:-4]}_tree.json', 'w') as tr:
