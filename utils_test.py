@@ -67,5 +67,5 @@ def get_children(node):
 '''export the structure to a json file'''
 tree = get_nodes('Root')
 # print(json.dumps(tree, indent=4))
-with open(f'{res_model_json[:-4]}_tree.json', 'w') as tr:
+with open(f'{res_model_json[:-5]}_tree.json', 'w') as tr:
         json.dump(tree, tr)
