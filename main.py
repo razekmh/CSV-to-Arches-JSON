@@ -116,7 +116,7 @@ def build_data(card,row):
     return data
 
 
-def create_json(resources):
+def create_main_object(resources):
 
     json_data = {}
     resources_list = {'resources' : resources}
@@ -132,7 +132,7 @@ def build_json():
         for row in act_data:
             resources.append(create_res(graphid, grouped_nodes, row))
     
-    built = create_json(resources)
+    built = create_main_object(resources)
     # print(built)
     with open(f'{data_csv[:-4]}.json', 'w') as fp:
         json.dump(built, fp)
