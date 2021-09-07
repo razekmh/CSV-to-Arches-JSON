@@ -26,7 +26,7 @@ res_model_json = "Activity Resource Model.json"
 data_csv = "Activity Resource Model_data.csv"
 
 res_model_json = "Test JSON upload.json"
-data_csv = "test_json_upload_data.csv"
+data_csv = "Test JSON_data.csv"
 
 # read json from resource model structure
 with open(res_model_json, 'r') as file_rm:
@@ -134,7 +134,7 @@ def build_json():
     
     built = create_main_object(resources)
     # print(built)
-    with open(f'{data_csv[:-4]}.json', 'w') as fp:
+    with open(f'{data_csv[:-4]}_ready_for_upload.json', 'w') as fp:
         json.dump(built, fp)
     # return built
 
