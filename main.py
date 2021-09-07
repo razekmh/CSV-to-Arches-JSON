@@ -86,7 +86,7 @@ def create_tile(card, resid, row, parent=None, tiles=None, tileid=str(uuid.uuid4
     tile['nodegroup_id'] = card[0]
     tile['sortorder'] = 0
     tile['parenttile_id'] = None
-    tile['data'] = Build_data(card, row)
+    tile['data'] = build_data(card, row)
     
     for nodegroup in nodegroup_list:
         if tile['nodegroup_id'] == nodegroup['nodegroupid'] and nodegroup['parentnodegroup_id'] is not None:
@@ -102,7 +102,7 @@ def create_tile(card, resid, row, parent=None, tiles=None, tileid=str(uuid.uuid4
     # create_tile(None, resid,  
     return tiles
 
-def Build_data(card,row):
+def build_data(card,row):
     data = {}
     # print(card, "/n/n/n")
     # print(data_dict)
