@@ -11,20 +11,31 @@ with open(res_model_strc, 'r') as file_rm:
 
 
 '''read cascading json structure'''
-def parse_json(node):
+def parse_json(node,type, parent_id=None):
+    if type == "group":
+        
+        pass
+    if type == "node":
 
+        pass
+    if type == "root":
+
+        pass
+    print(node)
     childrengroups = get_children('childrengroups',node)
     childrennodes = get_children('childrennodes',node)
     if childrengroups:
+        # parent_id = node['']
         for childgroup in childrengroups:
             parse_json(childgroup)
     else:
-        print("no childrengroups")
+        # print("no childrengroups")
+        pass
     
     if childrennodes:
         for childnode in childrennodes:
-            print(childnode['name'])
-    
+            # print(childnode)
+            pass
 
 def get_children(childtype,node):
     return(node.get(childtype, None))
