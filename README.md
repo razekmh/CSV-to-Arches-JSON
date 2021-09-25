@@ -33,7 +33,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/razekmh/CSV-to-Arches-JSON">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo.png" alt="Logo" width="%80" height="%80">
   </a>
 
   <h3 align="center">CSV-to-Arches-JSON</h3>
