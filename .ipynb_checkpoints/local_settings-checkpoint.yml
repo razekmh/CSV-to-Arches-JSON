@@ -1,0 +1,13 @@
+Basic:
+  GRAPH : 
+    UUID: 'b702e11e-ea41-11eb-86da-fa163ee7ffac'
+    cards : 
+      Recorder :
+        UUID : b702e13d-ea41-11eb-86da-fa163ee7ffac
+        Recorder : b702e13d-ea41-11eb-86da-fa163ee7ffac
+      "Start Date":
+        UUID : b702e11f-ea41-11eb-86da-fa163ee7ffac
+        Date : b702e147-ea41-11eb-86da-fa163ee7ffac
+        "Start Dating method" : b702e148-ea41-11eb-86da-fa163ee7ffac
+        "Start Archeological Period" : b702e14d-ea41-11eb-86da-fa163ee7ffac
+
