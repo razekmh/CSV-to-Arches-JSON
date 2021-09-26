@@ -143,7 +143,7 @@ more details about uploading the CSV file is available [here](https://arches.rea
 ```diff
 - THIS PROJECT IS UNDER DEVELOPMENT AND STEPS WILL BE UPDATED ACCORDINGLY
 ```
-
+Two parts of the code work 
 
 ### Prerequisites
 
