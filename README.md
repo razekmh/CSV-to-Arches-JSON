@@ -91,6 +91,8 @@ The underlying design of the resource models is based on JSON objects. This allo
 
 The structure (and all config info) of an Arches' resource model can be exported in JSON. An example of the resource model export file is [here](https://github.com/razekmh/CSV-to-Arches-JSON/blob/main/Activity%20Resource%20Model.json). The attributes within the JSON object in the file describe the resource model structure as well as its visualization attributes.  
 
+Arches resource model consists of groups/cards?. Groups contain nodes. A many to many relationships can created between groups and nodes. Within the resource model export JSON there are two attributes that represents the relationships between the groups and the nodes; _nodegroups_ and _nodes_. 
+
 ---
 #### CSV and shapefile upload: 
 Assuming that you are using the API to input data to Arches, you will need a mapping file for each resource model. You can download the mapping file from the _Arches designer_ page. A mapping file for _Example resource file_ looks like this.
@@ -139,11 +141,17 @@ more details about uploading the CSV file is available [here](https://arches.rea
 
 <!-- GETTING STARTED -->
 ## Getting Started
+Copy the repo locally and then follow these steps:
 
 ```diff
 - THIS PROJECT IS UNDER DEVELOPMENT AND STEPS WILL BE UPDATED ACCORDINGLY
 ```
-Two parts of the code work 
+I am currently approaching the problem from two directions: 
+
+1. Extract the resource model cascading structure out of the resource model export JSON:
+Use the file [utils_test.py](https://github.com/razekmh/CSV-to-Arches-JSON/blob/main/utils_test.py) for this task. Edit the variable _res_model_json_ to match the name/directory of the resource model export JSON then run the file. You will get another JSON file with the same name as the original resource model export and additional suffix _tree_. The structure of the output JSON can be seen [here](https://github.com/razekmh/CSV-to-Arches-JSON/blob/main/Activity%20Resource%20Model_tree.json) 
+ 
+  
 
 ### Prerequisites
 
