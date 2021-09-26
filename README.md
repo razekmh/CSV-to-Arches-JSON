@@ -34,6 +34,8 @@
   <p align="center">
     Converts CSV files to JSON files readable by Arches system
     <br />
+    THIS PROJECT IS STILL UNDER DEVELOPMENT. <br />
+    please check the roadmap for a full view of the develpment timeline <br />
     <a href="https://github.com/razekmh/CSV-to-Arches-JSON"><strong>Explore the docs »</strong></a>
     <br />
     <br />
@@ -131,7 +133,7 @@ more details about uploading the CSV file is available [here](https://arches.rea
 ### Built With
 
 * [Python3.8](https://www.python.org/downloads/release/python-380/)
-* JSON, csv, UUID
+* JSON, CSV, UUID
 
 <!-- GETTING STARTED -->
 ## Getting Started
