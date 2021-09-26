@@ -37,8 +37,6 @@
     <a href="https://github.com/razekmh/CSV-to-Arches-JSON"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/razekmh/CSV-to-Arches-JSON">View Demo</a>
-    ·
     <a href="https://github.com/razekmh/CSV-to-Arches-JSON/issues">Report Bug</a>
     ·
     <a href="https://github.com/razekmh/CSV-to-Arches-JSON/issues">Request Feature</a>
@@ -81,8 +79,7 @@
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`razekmh`, `CSV-to-Arches-JSON`, `data_champ`, `email`, `project_title`, `project_description`
+
 
 
 ### Built With
