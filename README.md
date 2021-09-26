@@ -83,6 +83,8 @@ Data input to Arches can be achieved using a dedicated GUI or an API. Bulk data 
 
 Arches main data structure is based on [resource models](https://arches.readthedocs.io/en/latest/data-model/#resource-model-overview). A resource model must be created before its data is added to the system. Multiple resource models can be created for any project and relationships between them can be established. 
 
+---
+### CSV and shapefile upload: 
 Assuming that you are using the API to input data to Arches, you will need a mapping file for each resource model. You can download the mapping file from the _Arches designer_ page. A mapping file for _Example resource file_ looks like this.
 ```JSON
 {
@@ -114,6 +116,11 @@ Assuming that you are using the API to input data to Arches, you will need a map
     ]
 }
 ```
+To upload a CSV file, the mapping file should be edited to match the _file_field_name_ attribute with the respective column names in the CSV file. 
+
+---
+### JSON upload:
+
  
 
 
