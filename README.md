@@ -126,18 +126,12 @@ more details about uploading the CSV file is available [here](https://arches.rea
 
 ---
 #### JSON upload:
-[JSON upload is not recommended](https://arches.readthedocs.io/en/latest/import-export/#json-import)due to its complexity
- 
-
-
+[JSON upload is not recommended](https://arches.readthedocs.io/en/latest/import-export/#json-import) due to its complexity. The design of Arches JSON can be found in the [same page](https://arches.readthedocs.io/en/latest/import-export/#json-import)
 
 ### Built With
 
-* []()
-* []()
-* []()
-
-
+* [Python3.8](https://www.python.org/downloads/release/python-380/)
+* JSON, csv, UUID
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -211,12 +205,11 @@ Project Link: [https://github.com/razekmh/CSV-to-Arches-JSON](https://github.com
 
 
 <!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-
+<!-- ## Acknowledgements
 * []()
 * []()
 * []()
-
+-->
 
 
 
