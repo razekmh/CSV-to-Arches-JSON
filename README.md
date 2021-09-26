@@ -149,8 +149,7 @@ Copy the repo locally and then follow these steps:
 I am currently approaching the problem from two directions: 
 
 1. Extract the resource model cascading structure out of the resource model export JSON:
-Use the file [utils_test.py](https://github.com/razekmh/CSV-to-Arches-JSON/blob/main/utils_test.py) for this task. Edit the variable _res_model_json_ to match the name/directory of the resource model export JSON then run the file. You will get another JSON file with the same name as the original resource model export and additional suffix _tree_. The structure of the output JSON can be seen [here](https://github.com/razekmh/CSV-to-Arches-JSON/blob/main/Activity%20Resource%20Model_tree.json) 
- 
+Use the file [utils_test.py](https://github.com/razekmh/CSV-to-Arches-JSON/blob/main/utils_test.py) for this task. Edit the variable _res_model_json_ to match the name/directory of the resource model export JSON then run the file. You will get another JSON file with the same name as the original resource model export and additional suffix _tree_. The structure of the output JSON can be seen [here](https://github.com/razekmh/CSV-to-Arches-JSON/blob/main/Activity%20Resource%20Model_tree.json). The output tree is a cascading structure of  
   
 
 ### Prerequisites
