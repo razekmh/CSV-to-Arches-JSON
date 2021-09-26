@@ -140,11 +140,10 @@ more details about uploading the CSV file is available [here](https://arches.rea
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To get a local copy up and running follow these simple steps.
-
 ```diff
-- THIS PROJECT IS UNDER DEVELOPMENT
+- THIS PROJECT IS UNDER DEVELOPMENT AND STEPS WILL BE UPDATED ACCORDINGLY
 ```
+
 
 ### Prerequisites
 
