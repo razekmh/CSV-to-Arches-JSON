@@ -91,7 +91,7 @@ The underlying design of the resource models is based on JSON objects. This allo
 
 The structure (and all config info) of an Arches' resource model can be exported in JSON. An example of the resource model export file is [here](https://github.com/razekmh/CSV-to-Arches-JSON/blob/main/Activity%20Resource%20Model.json). The attributes within the JSON object in the file describe the resource model structure as well as its visualization attributes.  
 
-Arches resource model consists of groups/cards?. Groups contain nodes. A many to many relationships can created between groups and nodes. Within the resource model export JSON there are two attributes that represents the relationships between the groups and the nodes; _nodegroups_ and _nodes_. 
+Arches resource model consists of groups/cards?. Groups contain nodes. A many to many relationships can created between groups and nodes. Within the resource model export JSON there are two attributes that represents the relationships between the groups and the nodes; _nodegroups_ and _nodes_.  
 
 ---
 #### CSV and shapefile upload: 
