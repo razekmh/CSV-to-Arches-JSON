@@ -42,10 +42,10 @@
   </p>
 </p>
 
-<p align="center">
 ```diff
 - THIS PROJECT IS UNDER DEVELOPMENT
 ```
+<p align="center">
 please check the <a href="#roadmap">roadmap</a> for a full view of the develpment timeline <br />
 </p>
 
