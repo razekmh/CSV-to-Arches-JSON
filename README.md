@@ -46,7 +46,7 @@
 - THIS PROJECT IS UNDER DEVELOPMENT
 ```
 <p align="center">
-please check the <a href="#roadmap">roadmap</a> for a full view of the develpment timeline <br />
+Please check the <a href="#roadmap">roadmap</a> for a full view of the develpment timeline <br />
 </p>
 
 <!-- TABLE OF CONTENTS -->
@@ -130,7 +130,7 @@ more details about uploading the CSV file is available [here](https://arches.rea
 
 ---
 #### JSON upload:
-[JSON upload is not recommended](https://arches.readthedocs.io/en/latest/import-export/#json-import) due to its complexity. The design of Arches JSON can be found in the [same page](https://arches.readthedocs.io/en/latest/import-export/#json-import)
+[JSON upload is not recommended](https://arches.readthedocs.io/en/latest/import-export/#json-import) due to its complexity. The design of Arches JSON can be found in the [same page](https://arches.readthedocs.io/en/latest/import-export/#json-import). This project aims to produce Arcehs readable JSON out of the CSV template.
 
 ### Built With
 
@@ -141,6 +141,10 @@ more details about uploading the CSV file is available [here](https://arches.rea
 ## Getting Started
 
 To get a local copy up and running follow these simple steps.
+
+```diff
+- THIS PROJECT IS UNDER DEVELOPMENT
+```
 
 ### Prerequisites
 
