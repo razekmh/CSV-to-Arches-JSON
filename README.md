@@ -83,8 +83,12 @@ Data input to Arches can be achieved using a dedicated GUI or an API. Bulk data 
 
 Arches main data structure is based on [resource models](https://arches.readthedocs.io/en/latest/data-model/#resource-model-overview). A resource model must be created before its data is added to the system. Multiple resource models can be created for any project and relationships between them can be established. 
 
+The underlying design of the resource models is based on JSON objects. This allows any resource model to encode cascading attributes with multiple instances at any level. The transformation between this tree-shaped JSON and the flat CSV is the main issue this repo is trying to tackle.   
+
+The structure (and all config info) of an Arches' resource model can be exported in JSON. An example of the resource model export file is [here](https://github.com/razekmh/CSV-to-Arches-JSON/blob/main/Activity%20Resource%20Model.json). The attributes within the JSON object in the file describe the resource model structure as well as its visualization attributes.  
+
 ---
-### CSV and shapefile upload: 
+#### CSV and shapefile upload: 
 Assuming that you are using the API to input data to Arches, you will need a mapping file for each resource model. You can download the mapping file from the _Arches designer_ page. A mapping file for _Example resource file_ looks like this.
 ```JSON
 {
@@ -116,11 +120,13 @@ Assuming that you are using the API to input data to Arches, you will need a map
     ]
 }
 ```
-To upload a CSV file, the mapping file should be edited to match the _file_field_name_ attribute with the respective column names in the CSV file. 
+To upload a CSV file, the mapping file should be edited to match the _file_field_name_ attribute with the respective column names in the CSV or shapefile file. 
+
+more details about uploading the CSV file is available [here](https://arches.readthedocs.io/en/latest/import-export/#csv-file-requirements). You will see in the documentation page that only one level of cascading is allowed in the CSV format. This means that for an attribute such as _name_, you can include "children attributes" such as _name type_ and _name value_. However adding additional levels will confuse the system. Additionally, Arches sometimes gets confused by only one level. The behaviour of the CSV upload function seems to be unstable. 
 
 ---
-### JSON upload:
-
+#### JSON upload:
+[JSON upload is not recommended](https://arches.readthedocs.io/en/latest/import-export/#json-import)due to its complexity
  
 
 
