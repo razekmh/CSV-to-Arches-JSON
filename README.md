@@ -81,7 +81,40 @@ _"[Arches](https://arches.readthedocs.io/en/latest/) is a web-based, geospatial 
 
 Data input to Arches can be achieved using a dedicated GUI or an API. Bulk data upload is only possible using the API. [Arches API accepts data in three formats](https://arches.readthedocs.io/en/latest/import-export/); JSON, CSV and shapefiles. Each of the formats require a dedicated structure. 
 
-Arches data structure is 
+Arches main data structure is based on [resource models](https://arches.readthedocs.io/en/latest/data-model/#resource-model-overview). A resource model must be created before its data is added to the system. Multiple resource models can be created for any project and relationships between them can be established. 
+
+Assuming that you are using the API to input data to Arches, you will need a mapping file for each resource model. You can download the mapping file from the _Arches designer_ page. A mapping file for _Example resource file_ looks like this.
+```
+{
+    "resource_model_id": "f2a47ff0-c4cb-4914-9e19-da7142eaf29d",
+    "resource_model_name": "Example Resource Model",
+    "nodes": [
+        {
+            "arches_nodeid": "205ee073-1d93-4119-ad5f-8b830be005aa",
+            "arches_node_name": "Name",
+            "file_field_name": "",
+            "data_type": "string",
+            "export": true
+        },
+        {
+            "arches_nodeid": "b69e5110-95f2-46dc-8243-6b1297cf969e",
+            "arches_node_name": "Active",
+            "file_field_name": "",
+            "data_type": "boolean",
+            "export": true
+        },
+        {
+            "arches_nodeid": "54e8646e-dd42-4c52-a392-3eeb2d6f6345",
+            "arches_node_name": "Type",
+            "file_field_name": "",
+            "data_type": "concept",
+            "concept_export_value": "label",
+            "export": true
+        }
+    ]
+}
+```
+ 
 
 
 
