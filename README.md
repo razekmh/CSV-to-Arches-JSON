@@ -34,13 +34,7 @@
   <p align="center">
     Converts CSV files to JSON files readable by Arches system
     <br />
-```diff
-    - THIS PROJECT IS STILL UNDER DEVELOPMENT
-```
- <br />
-    please check the <a href="#roadmap">roadmap</a> for a full view of the develpment timeline <br />
     <a href="https://github.com/razekmh/CSV-to-Arches-JSON"><strong>Explore the docs »</strong></a>
-    <br />
     <br />
     <a href="https://github.com/razekmh/CSV-to-Arches-JSON/issues">Report Bug</a>
     ·
@@ -48,6 +42,14 @@
   </p>
 </p>
 
+```diff
+- THIS PROJECT IS UNDER DEVELOPMENT
+```
+
+
+
+    please check the <a href="#roadmap">roadmap</a> for a full view of the develpment timeline <br />
+    please check the <a href="#roadmap">roadmap</a> for a full view of the develpment timeline <br />
 
 
 <!-- TABLE OF CONTENTS -->
