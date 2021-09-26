@@ -41,12 +41,12 @@
     <a href="https://github.com/razekmh/CSV-to-Arches-JSON/issues">Request Feature</a>
   </p>
 </p>
-
+<p align="center">
 ```diff
 - THIS PROJECT IS UNDER DEVELOPMENT
 ```
 please check the <a href="#roadmap">roadmap</a> for a full view of the develpment timeline <br />
-
+</p>
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
