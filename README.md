@@ -75,10 +75,9 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+This will be a utility to transform CSV of a specified format to JSON format readable by Arches.
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started:
+_"[Arches](https://arches.readthedocs.io/en/latest/) is a web-based, geospatial information system for cultural heritage inventory and management. The platform is purpose-built for the international cultural heritage field, and it is designed to record all types of immovable heritage, including archaeological sites, buildings and other historic structures, landscapes, and heritage ensembles or districts."_
 
 
 
